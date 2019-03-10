@@ -1,0 +1,45 @@
+
+.banner {
+  width: 100vw;
+	height: 100vh;
+  margin: 0;
+  padding: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.banner__wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.banner__header {
+	margin: 0 auto;
+	padding-top: 25px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.banner__header-logo {
+	width: 73px;
+	height: 19px;
+	fill: $white;
+	margin-right: 14px;
+	&--red {
+		fill: $red-logo;
+	}
+}
+
+.banner__header-text {
+	display: block;
+	padding-top: 1px;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	&--thin {
+		color: $grey;
+		font-weight: normal;
+	}
+}

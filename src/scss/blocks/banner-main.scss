@@ -1,0 +1,136 @@
+.banner-main {
+	background-color: $bg;
+	background-image: url("../img/bg-top-page.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom left;
+	position: relative;
+
+	&::after {
+		content: '';
+		display: block;
+		width: 54px;
+		height: 100px;
+		background-image: url("../img/down.png");
+		background-repeat: no-repeat;
+		background-size: 27px 50px;
+		position: absolute;
+		bottom: 2vh;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.banner-main__info {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	position: absolute;
+	top: 37px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.banner-main__tittle {
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 121px;
+	margin-bottom: 71px;
+	text-align: center;
+	font-size: 80px;
+	font-weight: bold;
+	line-height: 80px;
+	text-transform: none;
+}
+
+.banner-main__form {
+	width: 50%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	z-index: 2000;
+	position: relative;
+}
+
+.banner-main__container {
+	width: 100%;
+	position: relative;
+	z-index: 2000;
+}
+
+.banner-main__field {
+	width: 100%;
+	font-size: 24px;
+	line-height: 24px;
+	padding-top: 30px;
+	padding-left: 36px;
+	padding-bottom: 27px;
+	color: $black;
+	border-radius: 5px;
+	border: none;
+}
+
+.banner-main__btnCheck {
+	width: 156px;
+	height: 52px;
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	border: none;
+	border-radius: 5px;
+	background-color: $grey-btn;
+	color: $white;
+	font-size: 22px;
+	line-height: 22px;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.banner-main__btnSubm {
+	margin: 0 auto;
+	margin-top: 80px;
+	background-color: $green-btn;
+	border: none;
+	border-radius: 5px;
+	padding: 19px 50px 14.5px 45px;
+	color: $white;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.banner-main__valid-block {
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 3px;
+	background-color: $grey-valid;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: normal;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	z-index: 100;
+
+	&--hide {
+		display: none;
+	}
+}
+
+.banner-main__message-link {
+	color: $green-btn;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: normal;
+	border-bottom: 1px solid $green-btn;
+	padding-top: 1px;
+}

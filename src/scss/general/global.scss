@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
+main {
+	width: 100%
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "PT Sans Caption", "Arial", sans-serif;
+	color: #ffffff;
+}
+
+input[placeholder] {
+	color: black;
+}
+

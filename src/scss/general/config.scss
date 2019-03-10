@@ -1,0 +1,44 @@
+///////
+// FONTS
+///////
+
+@font-face {
+	font-family: "PT Sans", sans-serif;
+	font-display: swap;
+
+	src: url("../fonts/PTSans-Caption.woff") format("woff")
+}
+
+@font-face {
+	font-family: "PT_Sans-Caption", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+
+	src: url("../fonts/PT_Sans-Caption-Web-Bold.ttf") format("ttf")
+}
+
+@font-face {
+	font-family: "PT_Sans-Caption", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+
+	src: url("../fonts/PT_Sans-Caption-Web-Regular.ttf") format("ttf")
+}
+
+///////
+// COLOR
+///////
+$white: #ffffff;
+$black: #000000;
+$grey: #333333;
+$grey-btn: #5f6062;
+$grey-border: #afafb0;
+$green-btn: #77b53c;
+$grey-valid: rgba(51, 57, 63, 0.9);
+$red-logo: #b22725;
+$bg: #326faf;
+$bg-info: #f7f7f7;
+$pink: #f2385a;
+
