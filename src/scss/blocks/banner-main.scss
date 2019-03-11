@@ -5,18 +5,21 @@
 	background-size: cover;
 	background-position: bottom left;
 	position: relative;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 250px;
 
 	&::after {
 		content: '';
 		display: block;
 		width: 54px;
-		height: 100px;
+		height: 50px;
 		background-image: url("../img/down.png");
 		background-repeat: no-repeat;
 		background-size: 27px 50px;
 		position: absolute;
-		bottom: 2vh;
-		left: 50%;
+		bottom: 62px;
+		left: 52%;
 		transform: translateX(-50%);
 	}
 }
@@ -25,19 +28,19 @@
 	font-size: 12px;
 	font-weight: bold;
 	text-transform: uppercase;
-	letter-spacing: 6px;
+	letter-spacing: 2.16px;
 	position: absolute;
 	top: 37px;
-	left: 50%;
+	left: 52.5%;
 	transform: translateX(-50%);
 }
 
 .banner-main__tittle {
 	display: block;
-	width: 70%;
+	width: 64%;
 	margin: 0 auto;
 	margin-top: 121px;
-	margin-bottom: 71px;
+	margin-bottom: 66px;
 	text-align: center;
 	font-size: 80px;
 	font-weight: bold;
@@ -46,8 +49,9 @@
 }
 
 .banner-main__form {
-	width: 50%;
+	width: 60%;
 	margin: 0 auto;
+	padding: 0;
 	display: flex;
 	flex-direction: column;
 	z-index: 2000;
@@ -57,6 +61,8 @@
 .banner-main__container {
 	width: 100%;
 	position: relative;
+	margin: 0;
+	padding: 0;
 	z-index: 2000;
 }
 
@@ -64,9 +70,10 @@
 	width: 100%;
 	font-size: 24px;
 	line-height: 24px;
+	margin: 0;
 	padding-top: 30px;
 	padding-left: 36px;
-	padding-bottom: 27px;
+	padding-bottom: 28px;
 	color: $black;
 	border-radius: 5px;
 	border: none;
@@ -90,12 +97,12 @@
 }
 
 .banner-main__btnSubm {
-	margin: 0 auto;
-	margin-top: 80px;
+	margin: auto;
+	margin-top: 98px;
 	background-color: $green-btn;
 	border: none;
 	border-radius: 5px;
-	padding: 19px 50px 14.5px 45px;
+	padding: 18px 50px 14px 44px;
 	color: $white;
 	font-size: 24px;
 	line-height: 24px;
@@ -108,22 +115,26 @@
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
-	padding-top: 20px;
-	padding-bottom: 3px;
 	background-color: $grey-valid;
 	border: none;
 	border-radius: 5px;
 	font-size: 16px;
-	line-height: 16px;
+	line-height: 18px;
 	font-weight: normal;
 	position: absolute;
-	top: 30%;
+	top: 42px;
 	left: 0;
 	z-index: 100;
 
 	&--hide {
 		display: none;
 	}
+}
+
+.banner-main__message {
+	margin: 0;
+	padding-top: 57px;
+	padding-bottom: 15px;
 }
 
 .banner-main__message-link {
@@ -133,4 +144,9 @@
 	font-weight: normal;
 	border-bottom: 1px solid $green-btn;
 	padding-top: 1px;
+}
+
+
+@media (max-width: 1092px)  {
+	
 }

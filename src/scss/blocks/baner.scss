@@ -1,11 +1,9 @@
 
 .banner {
   width: 100vw;
-	height: 100vh;
   margin: 0;
   padding: 0;
-	position: relative;
-	overflow: hidden;
+  position: relative;
 }
 
 .banner__wrapper {
@@ -15,6 +13,7 @@
 }
 
 .banner__header {
+	width: 90%;
 	margin: 0 auto;
 	padding-top: 25px;
 	display: flex;
@@ -23,8 +22,8 @@
 }
 
 .banner__header-logo {
-	width: 73px;
-	height: 19px;
+	width: 74px;
+	height: 18px;
 	fill: $white;
 	margin-right: 14px;
 	&--red {
@@ -35,11 +34,15 @@
 .banner__header-text {
 	display: block;
 	padding-top: 1px;
-	font-size: 15px;
+	font-size: 16px;
+	line-height: 1.2;
 	font-weight: bold;
 	text-transform: uppercase;
 	&--thin {
-		color: $grey;
 		font-weight: normal;
+	}
+
+	&--red {
+		color: $grey;
 	}
 }

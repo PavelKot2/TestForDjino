@@ -3,15 +3,16 @@
 	background-image: url("../img/background2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding-bottom: 50px;
 }
 
 .banner-bot__ask {
 	display: block;
 	text-align: center;
-	margin: 50px auto 70px;
+	margin: 63px auto 98px;
 	color: $white;
 	font-size: 35px;
-	line-height: 35px;
+	line-height: 1.2;
 	font-weight: bold;
 }
 
@@ -19,45 +20,64 @@
 	display: block;
 	width: 70%;
 	text-align: center;
-	margin: 50px auto 70px;
+	margin: 0 auto 45px;
 	color: $white;
 	font-size: 50px;
-	line-height: 50px;
+	line-height: 1.2;
 	font-weight: bold;
+
 }
 
 .banner-bot__link {
 	display: block;
 	width: 265px;
-	margin: 0 auto 53px;
-	padding: 19px 50px 14.5px 44px;
+	margin: 0 auto 54px;
+	padding-top: 16px;
+	padding-bottom: 12px;
+	text-align: center;
 	background-color: $green-btn;
 	border: none;
 	border-radius: 5px;
 	color: $white;
 	font-size: 24px;
-	line-height: 24px;
 	font-weight: bold;
 	cursor: pointer;
 }
 
 .banner-bot__info {
 	display: flex;
+	width: 77%;
 	flex-direction: row;
-	width: 80%;
-	margin: 0 auto;
-	padding: 20px 35px 25px 38px;
+	margin: 0 auto 51px;
+	padding: 33px 34px 30px 38px;
 	background-color: $pink;
 	border: none;
 	border-radius: 5px;
+	position: relative;
+	z-index: 1000;
+
+	&::after {
+		content: "";
+		display: block;
+		width: 2px;
+		height: 70px;
+		position: absolute;
+		top: 50%;
+		right: 232px;
+		transform: translateY(-50%);
+		background-color: $pink-light;
+		z-index: 2000;
+	}
 }
 
 .banner-bot__info-text {
-	font-size: 22px;
-	font-weight: normal;
-	width: 80%;
+	display: block;
 	margin: 0;
+	margin-right: 112px;
 	padding: 0;
+	font-size: 22px;
+	line-height: 22px;
+	font-weight: normal;
 	color: $white;
 }
 
@@ -91,16 +111,17 @@
 
 .banner-bot__copyright {
 	width: 100%;
-	opacity: 0.5;
+	color: $whit-op50;
+	font-size: 14px;
+	line-height: 1.2;
 	text-align: center;
 	margin-top: 50px;
 }
 
 .banner-bot__copyright-link {
-	color: $white;
-	text-decoration: underline;
+	color: $whit-op50;
 
 	&:hover {
-		opacity: 1;
+		color: $white;
 	}
 }
