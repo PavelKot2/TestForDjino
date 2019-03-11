@@ -1,14 +1,15 @@
 .banner-mid {
 	background-color: $white;
+	padding-bottom: 85px;
 }
 
 .banner-mid__tittle {
 	text-align: center;
 	margin-top: 50px;
-	margin-bottom: 70px;
+	margin-bottom: 71px;
 	color: $black;
 	font-size: 35px;
-	line-height: 35px;
+	line-height: 1.2;
 	font-weight: bold;
 }
 
@@ -51,12 +52,28 @@
 
 .banner-mid__info {
 	grid-column: 1 / -1;
-	width: 90%;
-	margin: 5px auto 10px;
+	width: 95%;
+	margin: 5px auto 15px;
 	padding: 26px 39px 14px 43px;
 	background-color: $bg-info;
 	border: 1px solid $grey-border;
 	border-radius: 10px;
+	position: relative;
+	z-index: 1000;
+
+	&::after {
+		content: "";
+		width: 25px;
+		height: 25px;
+		border-top: 1px solid $grey-border;
+		border-right: 1px solid $grey-border;
+		background-color: $bg-info;
+		transform: rotate(-45deg);
+		position: absolute;
+		top: -13px;
+		left: 95px;
+		z-index: 10000;
+	}
 }
 
 .banner-mid__info-text {
@@ -71,12 +88,13 @@
 }
 
 .banner-mid__btn {
-	position: absolute;
-	bottom: 85px;
-	left: 50%;
-	transform: translateX(-50%);
-	margin: 0;
-	padding: 19px 50px 14.5px 45px;
+	display: block;
+	width: 265px;
+	margin: 0 auto;
+	margin-top: 44px;
+	text-align: center;
+	padding-top: 18px;
+	padding-bottom: 14px;
 	background-color: $green-btn;
 	border: none;
 	border-radius: 5px;
